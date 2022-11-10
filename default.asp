@@ -39,20 +39,30 @@
         </DIV>
         <DIV class="carousel">
             <script>
+                //flag in case all entries are blank
+                var blank = true;
+
                 for(var i = 0; i < datalines.length; i++)
                 {
                     if(datalines[i].substring(datalines[i].indexOf(":") + 2) != "blank" && datalines[i].substring(0, datalines[i].indexOf(":") - 1) == "soup")
                     {
                         document.write("<DIV class=\"slide soup\"><h2>Soup of the Day</h2><span>" + datalines[i].substring(datalines[i].indexOf(":") + 2) + "</span></DIV>");
+                        blank = false;
                     }
                     if(datalines[i].substring(datalines[i].indexOf(":") + 2) != "blank" && datalines[i].substring(0, datalines[i].indexOf(":")) == "special")
                     {
                         document.write("<DIV class=\"slide special\"><h2>Daily Special</h2><span>" + datalines[i].substring(datalines[i].indexOf(":") + 2) + "</span></DIV>");
+                        blank = false;
                     }
                     if(datalines[i].substring(datalines[i].indexOf(":") + 2) != "blank" && datalines[i].substring(0, datalines[i].indexOf(":")) == "wing")
                     {
                         document.write("<DIV class=\"slide wing\"><h2>Wing of the Week</h2><span>" + datalines[i].substring(datalines[i].indexOf(":") + 2) + "</span></DIV>");
+                        blank = false;
                     }
+                }
+                if(blank)
+                {
+                    document.write("<DIV class=\"slide empty\"><h2>Attention</h2><span>No specials!</span></DIV>");
                 }
 
                 // Select all slides
