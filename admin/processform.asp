@@ -13,6 +13,7 @@
 
 <% Sub Content %>
     <%
+    Response.Write "Current User: " & Request.ServerVariables("LOGON_USER")
     dim FSO_W, F_W, FSO_R, F_R, line, soup1, soup2, soup3, special, wing
     fname = "data.txt"
 
@@ -51,7 +52,7 @@
 
     'Process form for wing
     if Request.QueryString("wing") = "" then
-        wing = "wing"
+        wing = "blank"
     else
         wing = Request.QueryString("wing")
     end if
@@ -82,6 +83,8 @@
 %>
     <DIV class="wrapper">
         <H1>Results</H1>
+        <B style="color: red">Click "Customer View" and confirm changes.</B>
+        <BR>
         <script>
             for(var i = 0; i < datalines.length; i++)
             {

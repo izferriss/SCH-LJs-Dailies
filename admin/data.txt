@@ -1,5 +1,5 @@
-soup1: Bouillabaisse Marseillaise
-soup2: Fire Chicken Noodle
-soup3: Cream of Brocolli
-special: Toast Frittata
-wing: Black Pepper Lemon
+soup1: Beef Minestrone
+soup2: blank
+soup3: blank
+special: Chicken Dumplings
+wing: Hot Buffalo

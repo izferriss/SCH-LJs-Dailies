@@ -12,6 +12,7 @@
 
 <% Sub Content %>
     <%
+    Response.Write "Current User: " & Request.ServerVariables("LOGON_USER")
     fname = "data.txt"
     set FSO_R = Server.CreateObject("Scripting.FileSystemObject")
     set F_R = FSO_R.OpenTextFile(Server.MapPath(fname), 1)
