@@ -1,5 +1,5 @@
 soup1: Beef Minestrone
-soup2: blank
+soup2: New England Clam Chowder
 soup3: blank
-special: Chicken Dumplings
-wing: Hot Buffalo
+special: Peanut Noodles
+wing: Thai Curry

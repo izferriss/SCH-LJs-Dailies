@@ -5,6 +5,7 @@
 
 <% Sub Includes %>
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
     <script>
         let datalines = [];
     </script>
@@ -31,6 +32,8 @@
     %>
     <DIV class="wrapper">
     <H1>LJ's Soups and Specials Admin Form</H1>
+    If an item below says "blank", the respective "Customer View" slide will not show.<BR>
+        <BR>
         <FORM id="soups" method="get" action="processform.asp">
             <SPAN class="label">
                 <label for="soup1">Soup of the Day #1:</label>

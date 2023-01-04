@@ -5,6 +5,7 @@
 
 <% Sub Includes %>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <script>
         let datalines = [];
         let slideTimer = 7500; //in ms

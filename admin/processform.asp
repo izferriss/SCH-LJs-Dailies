@@ -6,6 +6,7 @@
 
 <% Sub Includes %>
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
     <script>
         let datalines = [];
     </script>
@@ -83,7 +84,7 @@
 %>
     <DIV class="wrapper">
         <H1>Results</H1>
-        <B style="color: red">Click "Customer View" and confirm changes.</B>
+        If an item below says "blank", the respective "Customer View" slide will not show.<BR>
         <BR>
         <script>
             for(var i = 0; i < datalines.length; i++)
@@ -91,6 +92,8 @@
                 document.write("<SPAN class=\"label\"><B>" + datalines[i].substring(0, datalines[i].indexOf(":")) + "</B>" + datalines[i].substring(datalines[i].indexOf(":")) +"</SPAN><BR>");
             }
         </script>
+        <BR>
+        <B style="color: red">Click "Customer View" and confirm changes.</B>
         <BR>
         <A HREF="//webservices/ljsoups/admin/form.asp">Back to Form</A><BR>
         <A HREF="//webservices/ljsoups/">Customer View</A>
